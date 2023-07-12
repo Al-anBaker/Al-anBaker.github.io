@@ -1,0 +1,467 @@
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 767px) {
+    .navbar {
+        max-width: 294px;
+        height: 202px;
+        flex-shrink: 0;
+        background-color: #64A2FF;
+        align-self: center;
+        display: grid;
+        align-content: stretch;
+        align-items: end;
+        margin: auto;
+        padding-top: 20px; ;
+    
+    }
+    
+    #menu__toggle {
+        opacity: 0;
+      }
+      #menu__toggle:checked + .menu__btn > span {
+        transform: rotate(45deg);
+        
+      }
+      #menu__toggle:checked + .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0deg);
+      }
+      #menu__toggle:checked + .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+        display: none;
+      }
+      #menu__toggle:checked ~ .menu__box {
+        left: 0 !important;
+      }
+      .menu__btn {
+        position: relative;
+        width: 26px;
+        height: 26px;
+        left: 20px;
+
+
+        cursor: pointer;
+        float:left;
+      }
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #000000;
+        transition-duration: .25s;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      .menu__box {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        margin: 0;
+        list-style: none;
+        background-color: #000000;
+        transition-duration: .25s;
+        display: flex;
+        max-width: 100%;
+        padding: 84px 0px 530px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 19px;
+        z-index: 2;
+      }
+      .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+        z-index: 3;
+      }
+      .menu__item:hover {
+        background-color: #CFD8DC;
+        color: #000000;
+      }
+    
+    .buttonMenu .contact {
+        display: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #AFAFAF;
+        width: 434px;
+        height: 48px;
+        flex-shrink: 0; 
+        border: none;
+        font-size: 26px;
+        float: right;
+        justify-self: end;
+        }
+
+       .navbar .logo {
+            justify-self: center;
+            max-width: 100%;
+        }
+        .CoverCotain {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-shrink: 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .TitleText {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(37, 37, 37, 0.64);
+            color: white;
+            max-width: 476px;
+            max-height: 77px;
+            flex-shrink: 0;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .coverimage {
+            width: 264px;
+            height: 200px;
+            object-fit: cover;
+
+        }
+
+    .navbar .logo {
+        justify-self: center;
+        max-width: 100%;
+    }
+    
+    .disccontainer {
+        list-style: none;
+        max-width: 1282px;
+        display: flex;
+        margin: auto;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .disc {
+        max-width: 588px;
+        height: 102px;
+        flex-shrink: 0;
+        display: flex;
+        background: #64A2FF;
+        margin: 5px;
+    }
+
+    .disc2 {
+        max-width: 588px;
+        height: 102px;
+        flex-shrink: 0;
+        display: flex;
+        background: #64A2FF;
+        margin: 5px;
+        float: left;
+    }
+
+    .desctext {
+     text-align: center;
+    }
+
+
+    .booknow {
+        width: 309px;
+        height: 77px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background: #64A2FF;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+    body {
+        background-color: #3662A5;
+    }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .menu__btn, .menu__box, .menu__item, #menu__toggle {
+        display: none;
+    }
+    .navbar {
+        max-width: 1358px;
+        height: 202px;
+        flex-shrink: 0;
+        background-color: #64A2FF;
+        align-self: center;
+        display: grid;
+        align-content: stretch;
+        align-items: end;
+        margin: auto;
+    
+    }
+    
+    .buttonMenu .Hamburger{
+        display: none;
+    }
+
+
+    .buttonMenu .contact {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #AFAFAF;
+        width: 434px;
+        height: 48px;
+        flex-shrink: 0; 
+        border: none;
+        font-size: 26px;
+        float: right;
+        justify-self: end;
+        }
+        
+        .navbar .logo {
+            justify-self: center;
+            max-width: 100%;
+        }
+    
+        .CoverCotain {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .TitleText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(37, 37, 37, 0.64);
+            color: white;
+            width: 476px;
+            height: 77px;
+            flex-shrink: 0;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 47px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .coverimage {
+            width: 1282px;
+            height: 338px;
+            object-fit: cover;
+
+        }
+
+    .navbar .logo {
+        justify-self: center;
+        max-width: 100%;
+    }
+    
+    .disccontainer {
+        list-style: none;
+        width: 1282px;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .disc {
+        width: 588px;
+        height: 102px;
+        flex-shrink: 0;
+        display: flex;
+        background: #64A2FF;
+        margin: 5px;
+    }
+
+    .disc2 {
+        width: 588px;
+        height: 102px;
+        flex-shrink: 0;
+        display: flex;
+        background: #64A2FF;
+        margin: 5px;
+        float: left;
+    }
+
+    .desctext {
+     text-align: center;
+    }
+
+
+    .booknow {
+        width: 309px;
+        height: 77px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background: #64A2FF;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    body {
+        background-color: #3662A5;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1024px) {
+    .menu__btn, .menu__box, .menu__item, #menu__toggle {
+        display: none;
+    }
+
+
+    
+
+    .navbar {
+        max-width: 1358px;
+        height: 202px;
+        flex-shrink: 0;
+        background-color: #64A2FF;
+        align-self: center;
+        display: grid;
+        align-content: stretch;
+        align-items: end;
+        margin: auto;
+        margin-bottom: 50px;
+    
+    }
+    
+    .buttonMenu .Hamburger{
+        display: none;
+    }
+
+    .buttonMenu .contact{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #AFAFAF;
+        max-width: 434px;
+        height: 48px;
+        flex-shrink: 0; 
+        border: none;
+        font-size: 26px;
+        float: right;
+        justify-self: end;
+        }
+
+
+        .CoverCotain {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .TitleText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(37, 37, 37, 0.64);
+            color: white;
+            width: 476px;
+            height: 77px;
+            flex-shrink: 0;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 47px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .coverimage {
+            width: 1282px;
+            height: 338px;
+            object-fit: cover;
+
+        }
+
+    .navbar .logo {
+        justify-self: center;
+        max-width: 100%;
+    }
+    
+    .disccontainer {
+        list-style: none;
+        width: 1282px;
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .disc {
+        width: 588px;
+        height: 102px;
+        flex-shrink: 0;
+        display: flex;
+        background: #64A2FF;
+        margin: 5px;
+    }
+
+    .disc2 {
+        width: 588px;
+        height: 102px;
+        flex-shrink: 0;
+        display: flex;
+        background: #64A2FF;
+        margin: 5px;
+        float: left;
+    }
+
+    .desctext {
+     text-align: center;
+    }
+
+
+    .booknow {
+        width: 309px;
+        height: 77px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background: #64A2FF;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    body {
+        background-color: #3662A5;
+  
+    }
+}
